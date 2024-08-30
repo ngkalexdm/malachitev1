@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="etatmensuel" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a45b12c-3dc3-4362-b4eb-fcf28c81dc1e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="mois" class="java.lang.String"/>
+	<parameter name="annee" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="parent" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[parent]]></fieldDescription>
+	</field>
+	<field name="en_stage" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[en_stage]]></fieldDescription>
+	</field>
+	<field name="date_radiation" class="java.lang.String">
+		<fieldDescription><![CDATA[date_radiation]]></fieldDescription>
+	</field>
+	<field name="anne" class="java.lang.Integer">
+		<fieldDescription><![CDATA[anne]]></fieldDescription>
+	</field>
+	<field name="arriere_initial" class="java.lang.Integer">
+		<fieldDescription><![CDATA[arriere_initial]]></fieldDescription>
+	</field>
+	<field name="code_mutuelle" class="java.lang.String">
+		<fieldDescription><![CDATA[code_mutuelle]]></fieldDescription>
+	</field>
+	<field name="motif_suspension" class="java.lang.String">
+		<fieldDescription><![CDATA[motif_suspension]]></fieldDescription>
+	</field>
+	<field name="sexe" class="java.lang.String">
+		<fieldDescription><![CDATA[sexe]]></fieldDescription>
+	</field>
+	<field name="historique_cotisation" class="java.util.List">
+		<fieldDescription><![CDATA[historique_cotisation]]></fieldDescription>
+	</field>
+	<field name="droit_adhesion" class="java.lang.Double">
+		<fieldDescription><![CDATA[droit_adhesion]]></fieldDescription>
+	</field>
+	<field name="avance_initial" class="java.lang.Integer">
+		<fieldDescription><![CDATA[avance_initial]]></fieldDescription>
+	</field>
+	<field name="cotisation_mensuel" class="java.lang.Double">
+		<fieldDescription><![CDATA[cotisation_mensuel]]></fieldDescription>
+	</field>
+	<field name="pac" class="java.util.List">
+		<fieldDescription><![CDATA[pac]]></fieldDescription>
+	</field>
+	<field name="noms" class="java.lang.String">
+		<fieldDescription><![CDATA[noms]]></fieldDescription>
+	</field>
+	<field name="province" class="java.lang.String">
+		<fieldDescription><![CDATA[province]]></fieldDescription>
+	</field>
+	<field name="montant_total" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant_total]]></fieldDescription>
+	</field>
+	<field name="id_entreprise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_entreprise]]></fieldDescription>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<fieldDescription><![CDATA[contact]]></fieldDescription>
+	</field>
+	<field name="montant_arriere" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant_arriere]]></fieldDescription>
+	</field>
+	<field name="motif" class="java.lang.String">
+		<fieldDescription><![CDATA[motif]]></fieldDescription>
+	</field>
+	<field name="profession" class="java.lang.String">
+		<fieldDescription><![CDATA[profession]]></fieldDescription>
+	</field>
+	<field name="telephone_portable" class="java.lang.String">
+		<fieldDescription><![CDATA[telephone_portable]]></fieldDescription>
+	</field>
+	<field name="naissance" class="java.util.Date">
+		<fieldDescription><![CDATA[naissance]]></fieldDescription>
+	</field>
+	<field name="indice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[indice]]></fieldDescription>
+	</field>
+	<field name="salaire" class="java.lang.Double">
+		<fieldDescription><![CDATA[salaire]]></fieldDescription>
+	</field>
+	<field name="id_commune" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_commune]]></fieldDescription>
+	</field>
+	<field name="montant_emise" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant_emise]]></fieldDescription>
+	</field>
+	<field name="date_creation" class="java.util.Date">
+		<fieldDescription><![CDATA[date_creation]]></fieldDescription>
+	</field>
+	<field name="radier" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[radier]]></fieldDescription>
+	</field>
+	<field name="effectif" class="java.lang.Integer">
+		<fieldDescription><![CDATA[effectif]]></fieldDescription>
+	</field>
+	<field name="situation_compte" class="java.lang.String">
+		<fieldDescription><![CDATA[situation_compte]]></fieldDescription>
+	</field>
+	<field name="id_beneficiaire" class="java.lang.Long">
+		<fieldDescription><![CDATA[id_beneficiaire]]></fieldDescription>
+	</field>
+	<field name="id_pac" class="java.lang.Long">
+		<fieldDescription><![CDATA[id_pac]]></fieldDescription>
+	</field>
+	<field name="nom_zone" class="java.lang.String">
+		<fieldDescription><![CDATA[nom_zone]]></fieldDescription>
+	</field>
+	<field name="facture_prestataires" class="java.util.List">
+		<fieldDescription><![CDATA[facture_prestataires]]></fieldDescription>
+	</field>
+	<field name="id_ville" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_ville]]></fieldDescription>
+	</field>
+	<field name="date_creation_bene" class="java.util.Date">
+		<fieldDescription><![CDATA[date_creation_bene]]></fieldDescription>
+	</field>
+	<field name="situation_actuelle" class="java.lang.Integer">
+		<fieldDescription><![CDATA[situation_actuelle]]></fieldDescription>
+	</field>
+	<field name="identite" class="java.lang.Long">
+		<fieldDescription><![CDATA[identite]]></fieldDescription>
+	</field>
+	<field name="id_garantie" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_garantie]]></fieldDescription>
+	</field>
+	<field name="commune" class="java.lang.String">
+		<fieldDescription><![CDATA[commune]]></fieldDescription>
+	</field>
+	<field name="icon" class="java.lang.String">
+		<fieldDescription><![CDATA[icon]]></fieldDescription>
+	</field>
+	<field name="type_suspension" class="java.lang.String">
+		<fieldDescription><![CDATA[type_suspension]]></fieldDescription>
+	</field>
+	<field name="code_parent" class="java.lang.String">
+		<fieldDescription><![CDATA[code_parent]]></fieldDescription>
+	</field>
+	<field name="nom_garentie" class="java.lang.String">
+		<fieldDescription><![CDATA[nom_garentie]]></fieldDescription>
+	</field>
+	<field name="nom" class="java.lang.String">
+		<fieldDescription><![CDATA[nom]]></fieldDescription>
+	</field>
+	<field name="situation_adherent" class="java.lang.String">
+		<fieldDescription><![CDATA[situation_adherent]]></fieldDescription>
+	</field>
+	<field name="suspendu" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[suspendu]]></fieldDescription>
+	</field>
+	<field name="indice_radiation" class="java.lang.Integer">
+		<fieldDescription><![CDATA[indice_radiation]]></fieldDescription>
+	</field>
+	<field name="id_province" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_province]]></fieldDescription>
+	</field>
+	<field name="is_pac" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[is_pac]]></fieldDescription>
+	</field>
+	<field name="tableau_id_adherent" class="java.util.List">
+		<fieldDescription><![CDATA[tableau_id_adherent]]></fieldDescription>
+	</field>
+	<field name="telephone_fixe" class="java.lang.String">
+		<fieldDescription><![CDATA[telephone_fixe]]></fieldDescription>
+	</field>
+	<field name="autre_code" class="java.lang.String">
+		<fieldDescription><![CDATA[autre_code]]></fieldDescription>
+	</field>
+	<field name="id_zone" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_zone]]></fieldDescription>
+	</field>
+	<field name="id_quartier" class="java.lang.String">
+		<fieldDescription><![CDATA[id_quartier]]></fieldDescription>
+	</field>
+	<field name="entree" class="java.lang.String">
+		<fieldDescription><![CDATA[entree]]></fieldDescription>
+	</field>
+	<field name="indice_suspension" class="java.lang.Integer">
+		<fieldDescription><![CDATA[indice_suspension]]></fieldDescription>
+	</field>
+	<field name="id_categorie" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_categorie]]></fieldDescription>
+	</field>
+	<field name="date_annulation_suspension" class="java.lang.String">
+		<fieldDescription><![CDATA[date_annulation_suspension]]></fieldDescription>
+	</field>
+	<field name="id_adherent" class="java.lang.Long">
+		<fieldDescription><![CDATA[id_adherent]]></fieldDescription>
+	</field>
+	<field name="prenom" class="java.lang.String">
+		<fieldDescription><![CDATA[prenom]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="montant_avance" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant_avance]]></fieldDescription>
+	</field>
+	<field name="lieu_naissance" class="java.lang.String">
+		<fieldDescription><![CDATA[lieu_naissance]]></fieldDescription>
+	</field>
+	<field name="ville" class="java.lang.String">
+		<fieldDescription><![CDATA[ville]]></fieldDescription>
+	</field>
+	<field name="categorie" class="java.lang.String">
+		<fieldDescription><![CDATA[categorie]]></fieldDescription>
+	</field>
+	<field name="responsable" class="java.lang.String">
+		<fieldDescription><![CDATA[responsable]]></fieldDescription>
+	</field>
+	<field name="observation" class="java.lang.Integer">
+		<fieldDescription><![CDATA[observation]]></fieldDescription>
+	</field>
+	<field name="localisation" class="java.lang.String">
+		<fieldDescription><![CDATA[localisation]]></fieldDescription>
+	</field>
+	<field name="prestataires" class="java.util.List">
+		<fieldDescription><![CDATA[prestataires]]></fieldDescription>
+	</field>
+	<field name="date_entree" class="java.util.Date">
+		<fieldDescription><![CDATA[date_entree]]></fieldDescription>
+	</field>
+	<field name="photo" class="java.lang.String">
+		<fieldDescription><![CDATA[photo]]></fieldDescription>
+	</field>
+	<field name="services" class="java.util.List">
+		<fieldDescription><![CDATA[services]]></fieldDescription>
+	</field>
+	<field name="id_pays" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_pays]]></fieldDescription>
+	</field>
+	<field name="delai_reprise" class="java.lang.Integer">
+		<fieldDescription><![CDATA[delai_reprise]]></fieldDescription>
+	</field>
+	<field name="type_cotisation" class="java.lang.String">
+		<fieldDescription><![CDATA[type_cotisation]]></fieldDescription>
+	</field>
+	<field name="equivalent_mois" class="java.lang.String">
+		<fieldDescription><![CDATA[equivalent_mois]]></fieldDescription>
+	</field>
+	<field name="adresse" class="java.lang.String">
+		<fieldDescription><![CDATA[adresse]]></fieldDescription>
+	</field>
+	<field name="delai_retard" class="java.lang.Integer">
+		<fieldDescription><![CDATA[delai_retard]]></fieldDescription>
+	</field>
+	<field name="montant_percue" class="java.lang.Double">
+		<fieldDescription><![CDATA[montant_percue]]></fieldDescription>
+	</field>
+	<field name="mouvement" class="java.util.List">
+		<fieldDescription><![CDATA[mouvement]]></fieldDescription>
+	</field>
+	<field name="id_exercice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id_exercice]]></fieldDescription>
+	</field>
+	<field name="pays" class="java.lang.String">
+		<fieldDescription><![CDATA[pays]]></fieldDescription>
+	</field>
+	<group name="Group_pays" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{id_pays}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<staticText>
+					<reportElement x="0" y="0" width="70" height="20" uuid="3c8b1c25-0142-4970-8f4f-719f4e34a1ee"/>
+					<box leftPadding="7"/>
+					<text><![CDATA[Pays :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="70" y="0" width="380" height="20" uuid="abaf1cce-eb5f-4dee-8587-79bc946daf65"/>
+					<box leftPadding="7"/>
+					<textFieldExpression><![CDATA[$F{pays}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<group name="Group_province" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{id_province}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<staticText>
+					<reportElement x="0" y="0" width="70" height="20" uuid="6fc30016-09a7-4cb9-b0f3-67172764298e"/>
+					<box leftPadding="7"/>
+					<text><![CDATA[Province :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="70" y="0" width="380" height="20" uuid="6e63b40d-3ae3-41f2-98fb-0a24ac53d809"/>
+					<box leftPadding="7"/>
+					<textFieldExpression><![CDATA[$F{province}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<group name="Group_ville" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{id_ville}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<staticText>
+					<reportElement x="0" y="0" width="70" height="20" uuid="07f122a4-7a33-47b2-bce1-5a3e55f13a49"/>
+					<box leftPadding="7"/>
+					<text><![CDATA[Ville :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="70" y="0" width="380" height="20" uuid="b19abb32-8880-4dad-b751-e879533375ed"/>
+					<box leftPadding="7"/>
+					<textFieldExpression><![CDATA[$F{ville}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<group name="Group_commune" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{id_commune}]]></groupExpression>
+		<groupHeader>
+			<band height="72">
+				<staticText>
+					<reportElement x="0" y="0" width="70" height="18" uuid="a85fe0ec-64e2-46b1-a05c-816e12e6058f"/>
+					<box leftPadding="7"/>
+					<text><![CDATA[Commune :]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="70" y="1" width="380" height="18" uuid="793561a1-44c2-4709-b105-7f88a628d8e5"/>
+					<box leftPadding="7"/>
+					<textFieldExpression><![CDATA[$F{commune}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="608" y="51" width="100" height="21" uuid="13e9ded7-a4a3-4a2c-b005-a14a372b8474"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Arriéré]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="108" y="51" width="130" height="21" uuid="bd2296cf-1b5c-4d7f-9d2d-f487244e9404"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Nom]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="289" y="51" width="120" height="21" uuid="f36fc354-968e-42e4-845d-b715376be6e3"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Email]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="708" y="51" width="94" height="21" uuid="8768f5de-b637-4611-a167-79bd4c7b966c"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Montant Percue]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="509" y="51" width="99" height="21" uuid="35ec7e92-05a5-4c13-ad0e-473044406368"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Cotisation]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="51" width="108" height="21" uuid="1b240571-e9b4-4322-a00f-b883c542783b"/>
+					<box leftPadding="7">
+						<pen lineStyle="Solid"/>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Code Mutuelle]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="238" y="51" width="51" height="21" uuid="3ac064fd-15a7-4101-ab1c-cc2551850108"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Genre]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="409" y="51" width="100" height="21" uuid="d16c6f60-0153-4aaa-9f5e-7606e1e706eb"/>
+					<box leftPadding="7">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Justified">
+						<font fontName="SansSerif" size="12"/>
+					</textElement>
+					<text><![CDATA[Phone]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60">
+			<staticText>
+				<reportElement x="0" y="20" width="509" height="40" uuid="5e183aeb-8319-41e0-9799-9b8c63ac005f"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Black" size="20"/>
+				</textElement>
+				<text><![CDATA[Etat mensuel pour le mois de :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="509" y="20" width="211" height="40" forecolor="#06D79C" uuid="39b55463-cfe8-41ac-beaa-abc337ed28d4"/>
+				<box leftPadding="5"/>
+				<textElement>
+					<font fontName="Arial Black" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mois}+" "+$P{annee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="108" height="20" uuid="d529b941-8260-4b5b-8159-0cc1fbc6d9b9"/>
+				<box leftPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{code_mutuelle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="108" y="0" width="130" height="20" uuid="9d0343f7-43f0-4845-afa2-7f7fb93e8301"/>
+				<box leftPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{nom} +" "+ $F{prenom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="238" y="0" width="51" height="20" uuid="df48c382-d5e4-4146-8219-0288bdf7c23c"/>
+				<box leftPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{sexe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="289" y="0" width="120" height="20" uuid="d0235026-c4a2-4062-a258-bd0198f21f7f"/>
+				<box leftPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="409" y="0" width="100" height="20" uuid="dc09d7bf-95ac-45f4-b4c3-164fc1689ef0"/>
+				<box leftPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telephone_portable}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="509" y="0" width="99" height="20" uuid="0294711e-8117-45ff-902e-5f7b620679bc"/>
+				<box rightPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{montant_emise}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="608" y="0" width="100" height="20" uuid="c1c18a7d-b83e-499e-996c-9c355d081d25"/>
+				<box rightPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{montant_arriere}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="708" y="0" width="94" height="20" uuid="c0323ac6-c5bf-4a0e-bd6a-c44c57d9c810"/>
+				<box rightPadding="7">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{montant_percue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
