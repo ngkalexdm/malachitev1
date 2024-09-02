@@ -4,6 +4,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/malachite-be-0.0.1-SNAPSHOT.jar malachite-be.jar
-EXPOSE 8093
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","malachite-be.jar"]
 
