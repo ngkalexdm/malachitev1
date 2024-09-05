@@ -78,8 +78,8 @@ ibeneficiaires ibeneficiaires;
 		adherentModel collection= new adherentModel();
 		String query="";
 		try {
-			query="select a.id as id_adherent,a.identite,a.code_mutuelle,i.nom,i.prenom,i.sexe,i.naissance,i.lieu_naissance, "
-					+ "i.profession,i.telephone_fixe,i.telephone_portable,a.situation_actuelle,s.intitule_situation,a.salaire, "
+			query="select a.id as id_adherent,a.identite,i.adresse,a.code_mutuelle,i.nom,i.prenom,i.sexe,i.naissance,i.lieu_naissance, "
+					+ "i.profession,i.telephone_fixe,case when i.telephone_portable='' then i.telephone_fixe else i.telephone_portable end telephone_portable,a.situation_actuelle,s.intitule_situation,a.salaire, "
 					+ "i.photo,i.id,i.responsable,i.contactresponsable as contact,a.id_garantie,g.nom as nom_garentie,g.droit_adhesion,"
 					+ "i.email,i.adresse,g.id_type_cotisation,tc.type_cotisation "
 					+ "from Tab_adherent a "
@@ -87,7 +87,7 @@ ibeneficiaires ibeneficiaires;
 					+ "inner join Tab_situation_adherents s on a.situation_actuelle=s.id "
 					+ "inner join Tab_type_cotisation tc on tc.id=g.id_type_cotisation "
 					+ "inner join Tab_identites i on a.identite=i.id "
-					+ "where a.id="+id ;
+					+ "where i.id="+id ;
 			collection=jdbcTemplate.queryForObject(query, BeanPropertyRowMapper.newInstance(adherentModel.class));
 			collection.setCotisation_mensuel(igarantie.GetGarantie(collection.getId_garantie()).getCotisation_mensuel());
 			collection.setPrestataires(iprestataires.GetGarantiePrestataire(collection.getId_garantie()));
@@ -99,8 +99,8 @@ ibeneficiaires ibeneficiaires;
 		try {
 			System.out.println("ett : "+collection.getId_adherent());
 			if(collection.getId_adherent()==null) {
-				query="select a.id as id_adherent,a.identite,a.code_mutuelle,i.nom,i.prenom,i.sexe,i.naissance,i.lieu_naissance, "
-						+ "i.profession,i.telephone_fixe,i.telephone_portable,a.situation_actuelle,s.intitule_situation,a.salaire, "
+				query="select a.id as id_adherent,a.identite,i.adresse,a.code_mutuelle,i.nom,i.prenom,i.sexe,i.naissance,i.lieu_naissance, "
+						+ "i.profession,i.telephone_fixe,case when i.telephone_portable='' then i.telephone_fixe else i.telephone_portable end telephone_portable,a.situation_actuelle,s.intitule_situation,a.salaire, "
 						+ "i.photo,i.id,i.responsable,i.contactresponsable as contact,a.id_garantie,g.nom as nom_garentie,g.droit_adhesion,"
 						+ "i.email,i.adresse,g.id_type_cotisation,tc.type_cotisation "
 						+ "from Tab_adherent a "
@@ -108,7 +108,7 @@ ibeneficiaires ibeneficiaires;
 						+ "inner join Tab_situation_adherents s on a.situation_actuelle=s.id "
 						+ "inner join Tab_type_cotisation tc on tc.id=g.id_type_cotisation "
 						+ "inner join Tab_identites i on a.identite=i.id "
-						+ "where a.id="+id ;
+						+ "where i.id="+id ;
 				collection=jdbcTemplate.queryForObject(query, BeanPropertyRowMapper.newInstance(adherentModel.class));
 				collection.setCotisation_mensuel(igarantie.GetGarantie(collection.getId_garantie()).getCotisation_mensuel());
 				collection.setPrestataires(iprestataires.GetGarantiePrestataire(collection.getId_garantie()));
