@@ -87,7 +87,7 @@ ibeneficiaires ibeneficiaires;
 					+ "inner join Tab_situation_adherents s on a.situation_actuelle=s.id "
 					+ "inner join Tab_type_cotisation tc on tc.id=g.id_type_cotisation "
 					+ "inner join Tab_identites i on a.identite=i.id "
-					+ "where i.id="+id ;
+					+ "where a.id="+id ;
 			collection=jdbcTemplate.queryForObject(query, BeanPropertyRowMapper.newInstance(adherentModel.class));
 			collection.setCotisation_mensuel(igarantie.GetGarantie(collection.getId_garantie()).getCotisation_mensuel());
 			collection.setPrestataires(iprestataires.GetGarantiePrestataire(collection.getId_garantie()));
